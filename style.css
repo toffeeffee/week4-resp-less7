@@ -1,0 +1,76 @@
+:root {
+  --text-align: center;
+  --text-align-p: left;
+  --h1-color: #7a0b43;
+  --text-color-blue: #412ac5;
+  --background-color-p: #bfadeb;
+  --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+.container {
+  width: 70%;
+  margin: 20px auto;
+  text-align: center;
+}
+h1,
+h2,
+h3 {
+  text-align: var(--text-align);
+}
+h1 {
+  color: var(--h1-color);
+  font-size: 96px;
+  margin: auto 40px;
+}
+h2 {
+  font-size: 56px;
+}
+h3 {
+  font-size: 48px;
+}
+p {
+  font-size: 20px;
+  line-height: 24px;
+}
+.navigation-links {
+  display: flex;
+  justify-content: center;
+}
+.contact-link,
+.about-link {
+  border: 2px solid var(--text-color-blue);
+  border-radius: 10px;
+  padding: 20px 30px;
+  margin: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  box-shadow: var(--box-shadow);
+}
+.contact-link {
+  background-color: var(--text-color-blue);
+  color: #fff;
+}
+.about-link {
+  background-color: #fff;
+  color: var(--text-color-blue);
+}
+
+.contact-link:hover,
+.about-link:hover {
+  color: var(--text-color-blue);
+  background-color: var(--background-color-p);
+}
+.about-paragraphs {
+  display: flex;
+  justify-content: space-evenly;
+}
+.about-paragraphs > p {
+  margin: 30px 20px;
+  padding: 20px;
+  border-radius: 7px;
+  text-align: var(--text-align-p);
+  background-color: var(--background-color-p);
+}
+.email-link {
+  font-size: 36px;
+  text-decoration: none;
+}
